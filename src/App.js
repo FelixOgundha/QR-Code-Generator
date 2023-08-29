@@ -1,19 +1,15 @@
 import React from 'react';
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import ForgotPassword from "./pages/ForgotPassword";
-import Index from './pages/Dashbord';
+import Index from './Pages';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" exact element={<Login />}></Route>
-          <Route path="/register" exact element={<Register />}></Route>
-          <Route path="/reset-password" exact element={<ForgotPassword />}></Route>
-          <Route path="/home" exact element={<Index />}></Route>
+          <Route path="/" exact element={<Index />}></Route>
+
         </Routes>
       </BrowserRouter>
     </>
